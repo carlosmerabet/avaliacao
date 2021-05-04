@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 
 require_once("classes/class.SQL.php");
 
-
+ini_set('max_execution_time', '300'); //300 seconds = 5 minutes
 $sql = new SQL();
 
 $res = $sql->getAll();
